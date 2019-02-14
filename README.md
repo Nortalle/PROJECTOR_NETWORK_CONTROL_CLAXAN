@@ -1,6 +1,6 @@
 # PROJECTOR NETWORK CONTROL - NodeJs
 
-Vincent Guidoux 
+[TOC]
 
 ## Introduction
 
