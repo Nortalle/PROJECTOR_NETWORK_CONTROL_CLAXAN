@@ -145,3 +145,8 @@ client.post('/protect/network.htm', querystring.stringify(params))
 
 The reboot has some issue,  it always wait for the timeout to goes off to apply.
 
+## What's next ?
+
+The next step is to use this protocol to make an app which can control multiple projectors given their IP address, or,.... not ? ;)
+
+![Next](./pictures/Next.JPG)
