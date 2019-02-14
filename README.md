@@ -4,9 +4,9 @@ Vincent Guidoux
 
 ## Introduction
 
-While working on a project with a lot of projector, I saw that some of them had an Ethernet Port, So I analyzed the protocol to control them using network
+While working on a project with a lot of projectors, I saw that some of them had an Ethernet Port, So I searched a way to control them using network
 
-It's for the **CLAXAN CL-ACC-18030N** and **CL-ACC-18030NH**.
+I use the **CLAXAN CL-ACC-18030N** and **CL-ACC-18030NH**.
 
 ![CL-ACC-18030NH](./pictures/claxan_cl_acc_18030NH.jpg)
 
@@ -16,9 +16,9 @@ So I put the default URL(`169.254.1.1`) of the projector in a web Browser, and t
 
 ![ProjectorNetworkControl](./pictures/ProjectorNetworkControl.JPG)
 
-But, with this interface, we can only control one projector at a time, so I began my journey on analysing the protocol to produce an app that can control more than one projector
+But, with this interface, we can only control one projector at a time, so I began my journey on analyzing the protocol to produce an app that can control more than one projector
 
-## Authentification
+## Authentication
 
 For this model the credentials are :
 
@@ -26,7 +26,7 @@ username : admin
 
 password : 0000
 
-I used Axios form nodejs
+I used `axios`form `nodejs`
 
 ```javascript
 const axios = require('axios');
