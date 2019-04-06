@@ -15,6 +15,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "node-fetch": "^2.3.0",
+    "npm": "^6.9.0",
     "querystring": "^0.2.0",
     "url-search-params": "^1.1.0",
     "util": "^0.11.1"

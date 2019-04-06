@@ -1,6 +1,6 @@
-const util = require('util');
+// const util = require('util');
 const axios = require('axios');
-const querystring = require('querystring');
+// const querystring = require('querystring');
 
 const client = axios.create({
     baseURL: 'http://admin:0000@169.254.1.1',
@@ -8,11 +8,10 @@ const client = axios.create({
 });
 
 // Power on
-// client.get('/protect/execPwr.cgi?PWRCHG=1');
+client.get('/protect/execPwr.cgi?PWRCHG=1');
 
 // Power off
-client.get('/protect/execPwr.cgi?PWRCHG=2');
-
+// client.get('/protect/execPwr.cgi?PWRCHG=2');
 
 // Mute on
 // client.get('/protect/execMute.cgi?MUTESEL=1');
@@ -25,6 +24,25 @@ client.get('/protect/execPwr.cgi?PWRCHG=2');
 
 // Freeze off
 // client.get('/protect/execFree.cgi?FREESEL=0');
+
+// Mode Normal
+// client.get('/protect/execLamp.cgi?LAMPSEL=0');
+
+// Mode Economic
+// client.get('/protect/execLamp.cgi?LAMPSEL=1');
+
+// Projection front
+// client.get('/protect/execPJT.cgi?PJTIONSEL=0');
+
+// Projection ceiling
+// client.get('/protect/execPJT.cgi?PJTIONSEL=1');
+
+// Projection rear
+client.get('/protect/execPJT.cgi?PJTIONSEL=2');
+
+// Projection rear-ceiling
+// client.get('/protect/execPJT.cgi?PJTIONSEL=3');
+
 /*
 client.get('/protect/execFree.cgi')
 .then(response => {
@@ -38,7 +56,7 @@ client.get('/protect/execPwr.cgi')
 
 // Bright off
 // client.get('/protect/execBrig.cgi?BRIG=-');
-
+/*
 const isDHCPActivated = '1';
 const ipAddress = '169.254.1.1';
 const subnetMask = '255.255.0.0';
@@ -72,3 +90,4 @@ client.post('/protect/network.htm', querystring.stringify(params))
     .catch((error) => {
         console.log(`error1 ${util.inspect(error.response, false, null)}`);
     });
+*/
